@@ -257,14 +257,32 @@ http://www.templatemo.com/tm-505-stacked
                         </div>
                         <div class="col-md-4">
                           <div class="more-info">
-                            <p><b>OFFICE ADDRESS:<br>DHARAPURAM ADDRESS
-                            <em><br> D/O 14/7-7, M.R COMPLEX <br> 
-								CHURCH ROAD <br>
-								 DHARAPURAM  <br>
-								  TIRUPUR <br>
-								   TAMIL NADU, INDIA <br>
-								    CALL ME @: +91949121107 <br>
-								 EMAIL: bentloads@gmail.com </br></br></br></br> </br></br></br></em></p>
+                            <p><b>
+                            <div id="official">
+                              <button class="btn"><u>OFFICIAL ADDRESS:</u></button><br>
+                            </div>
+                              <div class="official-panel">
+                              BENTLO
+                              <em><br> D/O 14/7-7, M.R COMPLEX, <br> 
+  								CHURCH ROAD, <br>
+  								 DHARAPURAM,  <br>
+  								  TIRUPUR-638656, <br>
+  								   TAMIL NADU, INDIA <br>
+                     </div>
+                   <b>
+                   <div id="coimbatore">
+                      <button class="btn"><u>COIMBATORE ADDRESS:</u></button>
+                   </div>
+                     <div class="coimbatore-panel" style="display: none">
+                     BENTLO
+                              <em><br> NO.49, BKR ROAD, <br> 
+                  NSP COMPLEX, <br>
+                   SIDDHAPUTHUR,  <br>
+                    COIMBATORE-641044, <br>
+                     TAMIL NADU, INDIA <br>
+                     </div>
+								    <u>CALL ME @:</u><br> +91-9489121107 <br>+91-9944794077<br>
+								 <u>EMAIL:</u><br> bentloads@gmail.com </br></br></br></br> </br></br></br></em></p>
                           </div>
                         </div>
                       </div>
@@ -299,6 +317,19 @@ http://www.templatemo.com/tm-505-stacked
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        <script>
+          $(document).ready(function(){
+            $("#coimbatore").click(function(){
+              $(".coimbatore-panel").slideDown("slow");
+              $(".official-panel").slideUp("slow");
+            });
+            $("#official").click(function(){
+              $(".coimbatore-panel").slideUp("slow");
+              $(".official-panel").slideDown("slow");
+            });
+          });
         </script>
     </body>
 </html>
